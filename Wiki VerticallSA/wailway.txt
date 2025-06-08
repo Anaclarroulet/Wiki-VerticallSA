@@ -1,0 +1,132 @@
+
+Connection URL
+
+hide
+open
+postgresql://postgres:VlBTnYDmPSfyyswHWhjuTfPPVexguiBc@caboose.proxy.rlwy.net:50976/railway
+
+Raw psql command
+
+hide
+PGPASSWORD=VlBTnYDmPSfyyswHWhjuTfPPVexguiBc psql -h caboose.proxy.rlwy.net -U postgres -p 50976 -d railway
+
+Railway CLI connect command
+
+railway connect Postgres
+
+
+
+
+Connection URL
+
+show
+open
+postgresql://postgres:********@caboose.proxy.rlwy.net:50976/railway
+
+Raw psql command
+
+show
+PGPASSWORD=******** psql -h caboose.proxy.rlwy.net -U postgres -p 50976 -d railway
+
+Railway CLI connect command
+
+railway connect Postgres
+
+
+Source
+Source Image
+ghcr.io/railwayapp-templates/postgres-ssl:16
+
+
+
+Disconnect
+Networking
+Public Networking
+Connect to your service over TCP using a proxied domain and port
+caboose.proxy.rlwy.net:50976
+
+:5432
+
+
+
+
+Generate Domain
+
+Custom Domain
+Private Networking
+Communicate with this service from within the Railway network.
+postgres.railway.internal
+IPv6
+
+
+Ready to talk privately ·
+You can also simply call me
+postgres
+.
+
+DNS
+postgres
+.railway.internal
+
+Endpoint name available!
+
+
+Cancel
+
+Update
+Deploy
+Custom Start Command
+Command that will be run to start new deployments. Docs↗
+
+Start Command
+Add pre-deploy step (Docs↗)
+Regions
+Configure how many instances of this service are deployed in each region.
+US East (Virginia, USA)
+
+Metal
+
+Replicas
+1
+Instance
+Replication is not available for services that have a cron schedule or a volume attached.
+
+Resource Limits
+Max amount of vCPU and Memory to allocate to each replica for this service.
+CPU: 2 vCPU
+
+Plan limit: 2 vCPU
+
+Memory: 0.512 GB
+
+Plan limit: 0.512 GB
+
+Upgrade to toggle resource limits
+Cron Schedule
+Run the service according to the specified cron schedule.
+
+Cron Schedule
+Healthcheck Path
+Endpoint to be called before a deploy completes to ensure the new deployment is live. Docs↗
+
+Healthcheck Path
+Serverless
+Containers will scale down to zero and then scale up based on traffic. Requests while the container is sleeping will be queued and served when the container wakes up. Docs↗
+
+Restart Policy
+Configure what to do when the process exits.
+On Failure
+
+Restart the container if it exits with a non-zero exit code. Docs↗
+
+
+Your plan only supports up to 10 retries
+
+Upgrade
+Number of times to try and restart the service if it stopped due to an error.
+Max restart retries
+10
+Delete Service
+Deleting this service will permanently delete all its deployments and remove it from this environment. This cannot be undone.
+
+Delete service
