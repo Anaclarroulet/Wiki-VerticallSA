@@ -1,0 +1,15 @@
+version: "3"
+services:
+  wiki:
+    image: requarks/wiki:2
+    ports:
+      - "3000:3000"
+    environment:
+      DB_TYPE: postgres
+      DB_HOST: caboose.proxy.rlwy.net
+      DB_PORT: 50976
+      DB_USER: postgres
+      DB_PASS: tu_clave_aqui
+      DB_NAME: railway
+      GIT_SYNC_ENABLED: "true"
+    restart: always
